@@ -1,0 +1,125 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>
+            Perceptron Page
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding id="section">
+
+    <div id = "graphStuff">
+        <div class="ion-canvas">
+            <canvas #canvas></canvas> 
+         
+            <div id = "otherStuff">
+                <div id="backR">
+                    
+                <h1 text-center>Perceptron 5000</h1>
+                <p>White means X>Y Black Y=>X--------------</p>
+
+
+                <p>Blue is Correct? Red is Wrong--------</p>
+
+
+                <ion-grid>
+                    <ion-row>
+                        <ion-col>
+                            
+                            <button
+                                ion-button
+                                color="primary"
+                                (click)="clearCanvas()" class = "but">
+                                Clear 
+                            </button>
+                        </ion-col>
+                        <ion-col>
+                          
+                            <button
+                                ion-button
+                                color="primary"
+                                (click)="drawTriangle()" class = "but">
+                                Triangle
+                            </button>
+                        </ion-col> 
+                    </ion-row>
+                    <ion-row>
+                        <ion-col>
+                        
+                            <button
+                                ion-button
+                                color="primary"
+                                (click)="drawCircle()" class = "but">
+                                Circle
+                            </button>
+                        </ion-col>  
+                        <ion-col>
+                           <button
+                                ion-button
+                                color="primary"
+                                (click)="drawData()" class = "but">
+                                Add Data
+                            </button>
+                        </ion-col> 
+                    </ion-row>
+                </ion-grid> 
+                </div>
+                
+                <div id = "moreStuff">
+                 
+                 <h2 text-center>Data</h2>
+                  <p>Data will be displayed here (x,y)</p>
+                 
+
+                  <p>
+                  <ion-scroll scrollY="true"><ion-option *ngFor="let a of arryP; let i = index">point {{i}}: ({{a.x}}) is identified {{isIdentified}}<br></ion-option>   </ion-scroll>
+                  </p>
+                
+
+               
+                 </div>
+            </div>
+            
+        </div>
+      
+
+
+
+        <ion-item-group>
+            <h3>Y = M * X + C</h3>
+            <h4>C =</h4>
+            <ion-item class="in"> =<ion-input type="number" [value]="qty" [(ngModel)]="qty"></ion-input></ion-item>
+            
+        
+            
+            <h4>M =</h4>
+            <ion-item class="in"> =<ion-input type="number" [value]="qty2" [(ngModel)]="qty2"></ion-input></ion-item>
+        </ion-item-group>
+
+
+
+
+        <button 
+            ion-button
+            color="primary"
+            (click)="drawLine()" >
+            Draw line   
+        </button>
+        
+         <button 
+            ion-button
+            color="primary"
+            (click)="setupP()" >
+            Test  
+        </button>
+        
+        <button 
+            ion-button
+            color="primary"
+            (click)=" clickTrain()" >
+            train
+        </button>
+    </div>
+
+
+</ion-content>

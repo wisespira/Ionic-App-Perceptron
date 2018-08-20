@@ -1,0 +1,132 @@
+page-perceptron {
+     #section{
+        background-image: url('../../assets/imgs/backG.jpg');
+      size: 100%;
+         background: color($colors, backBlue)
+    }
+    #top{
+        
+      background: color($colors, backBlue)
+    }
+    
+    .b{
+         background: color($colors, light);
+        padding-bottom: 15%;
+        padding-right: 60%;
+        max-width: 100%;
+       background: color($colors, backBlue)
+    }
+    
+    #one{
+         background: color($colors, Olypic )
+    }
+    #two{
+         background: color($colors, Azurel )
+    }
+    #three{
+         background: color($colors, Sapphire )
+    }
+    #four{
+         background: color($colors, Egyptian )
+    }
+    
+
+
+
+
+h1{
+    
+         
+}
+
+
+
+
+@keyframes bgcolor {
+    0% {
+        background-color: #45a3e5
+    }
+
+    30% {
+        background-color: #66bf39
+    }
+
+    60% {
+        background-color: #eb670f
+    }
+
+    90% {
+        background-color: #f35
+    }
+
+    100% {
+        background-color: #864cbf
+    }
+}
+
+#section {
+    -webkit-animation: bgcolor 20s infinite;
+    animation: bgcolor 10s infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+   background-color: #383838;
+}
+
+.in{
+    max-width: 30%;
+
+    
+}
+
+
+.but{
+  margin-bottom: 1%;
+}
+
+.ion-canvas{
+    margin-top: 1%;
+}
+#graphStuff{
+     
+   
+}
+
+#otherStuff{
+   
+    float: right;
+ //   margin-right: 30%;
+    max-width: 50%;
+    
+    
+}
+#backR{
+    background: #FFFFFF;
+      border-style: solid;
+    border-width: thin;
+}
+
+#moreStuff{
+    margin-top: 5%;
+     border-style: solid;
+    border-width: thin;
+    
+ //   margin-right: 30%;
+  
+    background: #FFFFFF;
+    
+}
+
+
+
+
+p{
+    padding: 3%
+}
+
+
+ion-scroll{
+    padding-bottom: 40%;
+}
+
+    
+}
