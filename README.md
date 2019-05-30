@@ -5,5 +5,4 @@ Testing ionic with p5js attempeted to implement a perseptron *has buggs*
 </p>
 
 cdm -
-`npm i` 
-`ionic serve`
+`npm i && ionic serve`
